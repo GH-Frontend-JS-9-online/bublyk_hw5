@@ -1,0 +1,178 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap')
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+html
+	scroll-behavior: smooth
+body
+	font-size: 16px
+	min-width: 320px
+	//position: relative
+	line-height: 1.65
+	font-family: "Montserrat", sans-serif
+	overflow-x: hidden
+	color: #314A5B
+div,.header,ul,#Work,#Portfolio,#Contact,footer 
+	display: flex
+
+.wrapper
+	min-width: 320px
+	max-width: 100%
+	margin: 0 auto
+	flex-direction: column
+
+.header
+	//justify-content: center
+	
+	&__wrapper
+		background: url(../img/header.png) 
+			position: top center 
+			repeat: no-repeat
+			size: cover
+		width: 1370px
+		height: 1057px
+		//flex-direction: column
+		margin-bottom: 85px
+	&__logo
+		width: 139px
+		height: 73px
+		margin-left: 218px
+		
+	
+	.menu
+		margin: 29px 0 0 265px
+		list-style-type: none
+		&__item a
+			text-transform: uppercase
+			font-size: 14px
+			color: #314A5B
+			text-decoration: none
+			list-style-type: none
+			padding-left: 40px
+			&:hover
+				color: #FA5C65
+			&:active
+				color: white
+	&__social_icon
+		display: flex
+		align-items: center
+	&__social a
+		font-size: 20px
+		color: #FA5C65
+		margin-left: 25px
+	&__title
+		width: 510px
+		margin: 300px 0 0 218px
+		//flex-direction: column
+	.title
+		&__tit
+			
+			font-size: 47px
+			margin: 0
+		&__button
+			background-color: #FA5C65
+			color: white
+			text-align: center
+			
+			border-radius: 7px
+			width: 171px
+			height: 64px
+			margin-top: 30px
+			&:hover 
+				background-color: white
+				color: #FA5C65
+span
+	color: #FA5C65
+.up
+	text-transform: uppercase
+#Work
+	justify-content: center
+
+.work
+	//justify-content: space-between
+	
+	.box
+		width: 260px
+		flex-direction: column
+		align-items: left
+		margin: 70px 35px 100px 35px
+		justify-content: space-between
+		&__titl
+			font-size: 26px
+			font-weight: bold
+			margin: 0
+
+.more
+	text-decoration: none
+	color: #FA5C65
+	font-weight: bold
+	margin-top: 30px
+.opa
+	opacity: 0.5
+		
+
+
+#Portfolio
+	display: flex
+	justify-content: center
+
+.imgfolio
+	width: 424px
+	height: 320px
+.p1
+	font-weight: bold
+	font-size: 30px
+	text-transform: uppercase
+	margin: 0
+.p2
+	font-size: 16px
+	font-weight: bold
+.plegend
+	flex-direction: column
+	width: 368px
+	margin-right: 90px
+	
+	
+#Contact, .resume
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+.team
+	flex-direction: column
+	margin-bottom: 45px
+.foto
+	height: 120px
+
+#Contact
+	margin-top: 100px
+#Contact  p 
+	margin: 0
+.red
+	font-size: 14px
+	color: #F15057
+	padding-top: 10px
+	padding-bottom: 20px
+.resume
+	width: 150px
+	font-size: 14px
+	margin-left: 25px
+.end
+	justify-content: flex-end
+footer
+	display: flex
+	justify-content: space-around
+	margin-top: 85px
+.g a
+	color: #B9C0C6
+.container
+	display: flex
+	justify-content: space-between
+	width: 940px
+
+
+
+@import "media" // Always at the end
